@@ -24,6 +24,7 @@ def generate_template():
     retros = calculate_retro_dates()
     template = """
 [[Morning Pages]]
+[[Daily Mantras]]
 Meditate:: ---
 Gym/Exercise::
 Read for pleasure::
