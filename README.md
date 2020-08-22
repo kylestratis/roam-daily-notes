@@ -32,6 +32,7 @@ at in this repo.
 An example output looks like this: 
 ```
 [[Morning Pages]]
+[[Daily Mantras]]
 Meditate:: ---
 Gym/Exercise::
 Read for pleasure::
