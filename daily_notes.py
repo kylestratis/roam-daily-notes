@@ -23,7 +23,6 @@ def calculate_retro_dates():
 def generate_template():
     retros = calculate_retro_dates()
     template = """
-[[Morning Pages]]
 [[Daily Mantras]]
 Meditate:: ---
 Gym/Exercise::
@@ -36,6 +35,21 @@ Bass::
     Four weeks ago: [[{four_weeks}]]
     Twelve weeks ago: [[{twelve_weeks}]]
     365 days ago: [[{one_year}]]
+## [[Tasks]]
+    {{{{query: {{and: [[TODO]] {{not: {{or:[[Overdue Tasks]] [[Archive]]}}{{between: [[today]] [[today]]}}}}}}}}
+## [[Overdue Tasks]]
+    {{{{query: {{and: [[TODO]] {{not: {{or: [[query]] [[Archive]]}}}}}}{{between: [[yesterday]] [[last month]]}}}}}}}}
+## [[Tracking]]
+    [[Sleep Score]]
+        {{{{[[slider]]}}}}
+    [[Morning Energy]]
+        {{{{[[slider]]}}}}
+    [[Cups of Coffee]]
+        {{{{[[slider]]}}}}
+    [[Afternoon Energy]]
+        {{{{[[slider]]}}}}
+## [[Journal]]
+    [[Morning Pages]]
     """.format(
         one_week=retros[0],
         four_weeks=retros[1],
