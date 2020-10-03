@@ -36,7 +36,7 @@ Bass::
     Twelve weeks ago: [[{twelve_weeks}]]
     365 days ago: [[{one_year}]]
 ## [[Tasks]]
-    {{{{query: {{and: [[TODO]] {{not: {{or:[[Overdue Tasks]] [[Archive]]}}{{between: [[today]] [[today]]}}}}}}}}
+    {{{{query: {{and: [[TODO]] {{not: {{or:[[Overdue Tasks]] [[Archive]]}}}}{{between: [[today]] [[today]]}}}}}}}}
 ## [[Overdue Tasks]]
     {{{{query: {{and: [[TODO]] {{not: {{or: [[query]] [[Archive]]}}}}}}{{between: [[yesterday]] [[last month]]}}}}}}}}
 ## [[Tracking]]
