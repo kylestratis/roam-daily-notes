@@ -46,7 +46,7 @@ An example output looks like this (with the query results filled in, of course):
 - ## [[Tasks]]
     - {{query: {and: [[TODO]] {not: [[Overdue Tasks]]}{between: [[today]] [[today]]}}}}
 - ## [[Overdue Tasks]]
-    - {{query: {and: [[TODO]] {not: {or: [[query]][[Archive]]}}}{between: [[yesterday]] [[last month]]}}}}
+    - {{query: {and: [[TODO]] {not: {or: [[query]] [[Archive]] [[Future]]}}}{between: [[yesterday]] [[last month]]}}}}
 - ## [[Tracking]]
     - [[Sleep Score]]
         - {{[[slider]]}}
@@ -59,3 +59,5 @@ An example output looks like this (with the query results filled in, of course):
 - ## [[Journal]]
     - [[Morning Pages]]
 ```  
+
+Use `#Archive` to mark TODOs as no longer relevant, or `#FUTURE` to mark them as due in the future (along with the future date).
