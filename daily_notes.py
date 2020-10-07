@@ -38,7 +38,7 @@ Bass::
 ## [[Tasks]]
     {{{{query: {{and: [[TODO]] {{not: {{or:[[Overdue Tasks]] [[Archive]]}}}}{{between: [[today]] [[today]]}}}}}}}}
 ## [[Overdue Tasks]]
-    {{{{query: {{and: [[TODO]] {{not: {{or: [[query]] [[Archive]]}}}}}}{{between: [[yesterday]] [[last month]]}}}}}}}}
+    {{{{query: {{and: [[TODO]] {{not: {{or: [[query]] [[Archive]] [[Future]]}}}}}}{{between: [[yesterday]] [[last month]]}}}}}}}}
 ## [[Tracking]]
     [[Sleep Score]]
         {{{{[[slider]]}}}}
