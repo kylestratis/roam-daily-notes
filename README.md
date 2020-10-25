@@ -60,4 +60,6 @@ An example output looks like this (with the query results filled in, of course):
     - [[Morning Pages]]
 ```  
 
-Use `#Archive` to mark TODOs as no longer relevant, or `#FUTURE` to mark them as due in the future (along with the future date).
+Use `#Archive` to mark TODOs as no longer relevant, or `#Future` to mark them as due in the future (along with the future date).
+
+Enjoyed this workflow? [Buy me a beer!](https://www.buymeacoffee.com/kylestratis)
