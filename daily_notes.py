@@ -40,6 +40,8 @@ Bass::
     {{{{query: {{and: [[TODO]] {{not: {{or:[[Overdue Tasks]] [[Archive]]}}}}{{between: [[today]] [[today]]}}}}}}}}
 ## [[Overdue Tasks]]
     {{{{query: {{and: [[TODO]] {{not: {{or: [[query]] [[Archive]] [[Future]]}}}}}}{{between: [[yesterday]] [[{beginning_of_year}]]}}}}}}}}
+## [[Completed Tasks]]
+    {{{{query: {{and: [[DONE]] {{not: {{or:[[Overdue Tasks]] [[Archive]]}}}}{{between: [[today]] [[today]]}}}}}}}}
 ## [[Tracking]]
     [[Sleep Score]]
         {{{{[[slider]]}}}}
