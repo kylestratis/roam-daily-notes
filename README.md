@@ -47,6 +47,8 @@ An example output looks like this (with the query results filled in, of course):
     - {{query: {and: [[TODO]] {not: [[Overdue Tasks]]}{between: [[today]] [[today]]}}}}
 - ## [[Overdue Tasks]]
     - {{query: {and: [[TODO]] {not: {or: [[query]][[Archive]]}}}{between: [[yesterday]] [[January 1st, 2020]]}}}}
+- ## [[Completed Tasks]]
+    - {{query: {and: [[DONE]] {not: {or:[[Overdue Tasks]] [[Archive]]}}{between: [[today]] [[today]]}}}}
 - ## [[Tracking]]
     - [[Sleep Score]]
         - {{[[slider]]}}
