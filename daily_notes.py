@@ -17,7 +17,11 @@ def calculate_retro_dates():
         for i in [1, 4, 12]
     ]
     retros.append(custom_strftime("%B {S}, %Y", today - datetime.timedelta(days=365)))
-    retros.append(custom_strftime("%B {S}, %Y", datetime.datetime.now().date().replace(month=1, day=1)))
+    retros.append(
+        custom_strftime(
+            "%B {S}, %Y", datetime.datetime.now().date().replace(month=1, day=1)
+        )
+    )
     return retros
 
 
@@ -58,7 +62,7 @@ Bass::
         four_weeks=retros[1],
         twelve_weeks=retros[2],
         one_year=retros[3],
-        beginning_of_year=retros[4]
+        beginning_of_year=retros[4],
     )
     return template
 
