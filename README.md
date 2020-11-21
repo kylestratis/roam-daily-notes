@@ -29,6 +29,8 @@ want to generate your daily notes. The script that generates the template is als
 at in this repo. 
 
 ## Output
+[Video demo](https://www.loom.com/share/4d9543d505834dc1970324326871ab5a)
+
 An example output looks like this (with the query results filled in, of course): 
 ```
 - [[Daily Mantras]]
