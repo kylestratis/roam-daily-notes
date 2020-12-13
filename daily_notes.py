@@ -41,11 +41,11 @@ Bass::
     Twelve weeks ago: [[{twelve_weeks}]]
     365 days ago: [[{one_year}]]
 ## [[Tasks]]
-    {{{{query: {{and: [[TODO]] {{not: {{or:[[Overdue Tasks]] [[Archive]]}}}}{{between: [[today]] [[today]]}}}}}}}}
+    {{{{query: {{and: [[TODO]] {{not: {{or:[[Overdue Tasks]] [[Archive]]}}}} {{between: [[today]] [[today]]}}}}}}}}
 ## [[Overdue Tasks]]
-    {{{{query: {{and: [[TODO]] {{not: {{or: [[query]] [[Archive]] [[Future]]}}}}}}{{between: [[yesterday]] [[{beginning_of_year}]]}}}}}}}}
+    {{{{query: {{and: [[TODO]] {{not: {{or: [[query]] [[Archive]] [[Future]]}}}} {{between: [[yesterday]] [[{beginning_of_year}]]}}}}}}}}}}
 ## [[Completed Tasks]]
-    {{{{query: {{and: [[DONE]] {{not: {{or: [[query]] [[Overdue Tasks]] [[Archive]]}}}}{{between: [[today]] [[today]]}}}}}}}}
+    {{{{query: {{and: [[DONE]] {{not: {{or: [[query]] [[Overdue Tasks]] [[Archive]]}}}} {{between: [[today]] [[today]]}}}}}}}}
 ## [[Tracking]]
     [[Sleep Score]]
         {{{{[[slider]]}}}}
