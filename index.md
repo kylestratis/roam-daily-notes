@@ -32,35 +32,35 @@ at in this repo.
 
 An example output looks like this (with the query results filled in, of course): 
 ```
-- [[Daily Mantras]]
-- Meditate:: ---
-- Gym/Exercise::
-- Read for pleasure::
-- Read for learning::
-- Greek::
-- Bass::
-- ## Retrospective
-    - One week ago: [[September 25th, 2020]]
-    - Four weeks ago: [[September 4th, 2020]]
-    - Twelve weeks ago: [[July 10th, 2020]]
-    - 365 days ago: [[October 3rd, 2019]]
-- ## [[Tasks]]
-    - {{query: {and: [[TODO]] {not: [[Overdue Tasks]]}{between: [[today]] [[today]]}}}}
-- ## [[Overdue Tasks]]
-    - {{query: {and: [[TODO]] {not: {or: [[query]][[Archive]]}}}{between: [[yesterday]] [[January 1st, 2020]]}}}}
-- ## [[Completed Tasks]]
-    - {{query: {and: [[DONE]] {not: {or:[[Overdue Tasks]] [[Archive]]}}{between: [[today]] [[today]]}}}}
-- ## [[Tracking]]
-    - [[Sleep Score]]
-        - {{[[slider]]}}
-    - [[Morning Energy]]
-        - {{[[slider]]}}
-    - [[Cups of Coffee]]
-        - {{[[slider]]}}
-    - [[Afternoon Energy]]
-        - {{[[slider]]}}
-- ## [[Journal]]
-    - [[Morning Pages]]
+[[Daily Mantras]]
+Meditate:: ---
+Gym/Exercise::
+Read for pleasure::
+Read for learning::
+Greek::
+Bass::
+## Retrospective
+    One week ago: [[December 27th, 2020]]
+    Four weeks ago: [[December 6th, 2020]]
+    Twelve weeks ago: [[October 11th, 2020]]
+    365 days ago: [[January 4th, 2020]]
+## [[Tasks]]
+    {{query: {and: [[TODO]] {not: {or:[[Overdue Tasks]] [[Archive]]}} {between: [[today]] [[today]]}}}}
+## [[Overdue Tasks]]
+    {{query: {and: [[TODO]] {not: {or: [[query]] [[Archive]] [[Future]]}} {between: [[yesterday]] [[January 1st, 2021]]}}}}
+## [[Completed Tasks]]
+    {{query: {and: [[DONE]] {not: {or: [[query]] [[Overdue Tasks]] [[Archive]]}} {between: [[today]] [[today]]}}}}
+## [[Tracking]]
+    [[Sleep Score]]
+        {{[[slider]]}}
+    [[Morning Energy]]
+        {{[[slider]]}}
+    [[Cups of Coffee]]
+        {{[[slider]]}}
+    [[Afternoon Energy]]
+        {{[[slider]]}}
+## [[Journal]]
+    [[Morning Pages]]
 ```  
 
 Use `#Archive` to mark TODOs as no longer relevant, or `#Future` to mark them as due in the future (along with the future date).
