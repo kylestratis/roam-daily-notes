@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+Alfred workflow that generates a Roam daily notes template
 
-You can use the [editor on GitHub](https://github.com/kylestratis/roam-daily-notes/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This workflow allows you to use a snippet trigger with [Alfred](https://www.alfredapp.com/) to generate daily notes. The top-level attributes should be replaced with habits you would like to track, and can use a an attr-table to build a quick habit tracker.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It also provides a space for Morning Pages. This is a space to start your day with some intentionality. You should have a separate page of questions and writing prompts, and drag blockrefs of 2 or 3 questions or prompts to answer for the day. My Morning Pages page looks like this:
+- Questions
+    - What am I excited about? 
+    - What am I worried about? 
+    - Is there anything I'm forgetting?
+    - What would I like to write about?
+    - What's bothering me? 
+    - What do I need to prioritize? 
+- Prompts
+    - I love it when
+    - I hate it when 
+    - When I wake up
+    - When I go to sleep 
+    - If I could change one thing, it would be 
+    - Next year I want to
+    - I miss
 
-### Markdown
+At the end, it provides a space for a retrospective/time sieve (as described by Roam forum user mattbrockwell [in this thread](https://forum.roamresearch.com/t/what-would-be-your-top-3-tips-for-beginners/255)) to review your notes from the past. You can open these pages in the sidebar and potentially gain new insights into who you were, what you found important, and perhaps even something you're working on in the current day.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Installation
+To install, all you need to do is download the Roam Daily Notes.alfredworkflow file from this repo and
+open it with Alfred. Define the snippet trigger you want to use (I like `\\xrdn`) and use it whenever you
+want to generate your daily notes. The script that generates the template is also available to look
+at in this repo. 
 
-```markdown
-Syntax highlighted code block
+## Output
+[Video demo](https://www.loom.com/share/4d9543d505834dc1970324326871ab5a)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+An example output looks like this (with the query results filled in, of course): 
 ```
+- [[Daily Mantras]]
+- Meditate:: ---
+- Gym/Exercise::
+- Read for pleasure::
+- Read for learning::
+- Greek::
+- Bass::
+- ## Retrospective
+    - One week ago: [[September 25th, 2020]]
+    - Four weeks ago: [[September 4th, 2020]]
+    - Twelve weeks ago: [[July 10th, 2020]]
+    - 365 days ago: [[October 3rd, 2019]]
+- ## [[Tasks]]
+    - {{query: {and: [[TODO]] {not: [[Overdue Tasks]]}{between: [[today]] [[today]]}}}}
+- ## [[Overdue Tasks]]
+    - {{query: {and: [[TODO]] {not: {or: [[query]][[Archive]]}}}{between: [[yesterday]] [[January 1st, 2020]]}}}}
+- ## [[Completed Tasks]]
+    - {{query: {and: [[DONE]] {not: {or:[[Overdue Tasks]] [[Archive]]}}{between: [[today]] [[today]]}}}}
+- ## [[Tracking]]
+    - [[Sleep Score]]
+        - {{[[slider]]}}
+    - [[Morning Energy]]
+        - {{[[slider]]}}
+    - [[Cups of Coffee]]
+        - {{[[slider]]}}
+    - [[Afternoon Energy]]
+        - {{[[slider]]}}
+- ## [[Journal]]
+    - [[Morning Pages]]
+```  
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Use `#Archive` to mark TODOs as no longer relevant, or `#Future` to mark them as due in the future (along with the future date).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kylestratis/roam-daily-notes/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Enjoyed this workflow? [Buy me a beer!](https://www.buymeacoffee.com/kylestratis)
