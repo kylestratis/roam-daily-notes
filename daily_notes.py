@@ -29,12 +29,12 @@ def generate_template():
     retros = calculate_retro_dates()
     template = """
 [[Daily Mantras]]
-Meditate:: ---
-Gym/Exercise::
+Gym/Exercise:: ---
 Read for pleasure::
 Read for learning::
 Greek::
 Bass::
+Practice Elixir::
 ## Retrospective
     One week ago: [[{one_week}]]
     Four weeks ago: [[{four_weeks}]]
