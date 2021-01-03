@@ -1,3 +1,5 @@
+[Get the workflow and code](https://github.com/kylestratis/roam-daily-notes)
+
 Alfred workflow that generates a Roam daily notes template
 
 This workflow allows you to use a snippet trigger with [Alfred](https://www.alfredapp.com/) to generate daily notes. The top-level attributes should be replaced with habits you would like to track, and can use a an attr-table to build a quick habit tracker.
