@@ -1,4 +1,4 @@
-<img src="https://github.com/kylestratis/roam-daily-notes/blob/gh-pages/rdn_01.png" height=400 /> <img src="https://github.com/kylestratis/roam-daily-notes/blob/gh-pages/rdn_02.png" height=400 />
+<img src="rdn_01.png" height=400 /> <img src="rdn_02.png" height=400 />
 
 [Get the workflow and code](https://github.com/kylestratis/roam-daily-notes)
 
